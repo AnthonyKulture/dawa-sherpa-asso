@@ -68,3 +68,4 @@ Thumbs.db
 .github/prompts/
 .claude/skills/
 
+/out/
