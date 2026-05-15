@@ -43,7 +43,7 @@ export function Testimonial() {
               <div className="flex items-center gap-4">
                 <div
                   aria-hidden
-                  className="flex size-13 items-center justify-center rounded-full bg-terra font-display text-base text-white"
+                  className="flex size-[52px] shrink-0 items-center justify-center rounded-full bg-terra font-display text-base text-white"
                 >
                   DS
                 </div>

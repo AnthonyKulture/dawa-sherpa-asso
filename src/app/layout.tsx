@@ -57,8 +57,16 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr" className={`${manrope.variable} ${newsreader.variable}`}>
       <body className="min-h-screen flex flex-col bg-bg text-text antialiased">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-text focus:px-5 focus:py-3 focus:text-sm focus:font-medium focus:text-bg focus:shadow-lg"
+        >
+          Aller au contenu
+        </a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="main-content" className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

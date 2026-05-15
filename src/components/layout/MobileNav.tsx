@@ -32,7 +32,7 @@ export function MobileNav() {
     <>
       <button
         type="button"
-        className="flex size-10 items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft md:hidden"
+        className="flex size-11 cursor-pointer touch-manipulation items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg md:hidden"
         aria-label="Ouvrir le menu"
         aria-expanded={open}
         aria-controls="mobile-drawer"
@@ -59,7 +59,7 @@ export function MobileNav() {
           <div className="flex justify-end">
             <button
               type="button"
-              className="flex size-10 items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft"
+              className="flex size-11 cursor-pointer touch-manipulation items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
               aria-label="Fermer le menu"
               onClick={() => setOpen(false)}
             >
@@ -67,13 +67,13 @@ export function MobileNav() {
             </button>
           </div>
 
-          <nav aria-label="Navigation mobile" className="mt-8 flex flex-col gap-2">
+          <nav aria-label="Navigation mobile" className="mt-8 flex flex-col gap-1.5">
             {siteConfig.nav.primary.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-3 font-display text-2xl font-light text-text transition-colors hover:bg-bg-soft"
+                className="min-h-[48px] rounded-xl px-3 py-3 font-display text-2xl font-light text-text transition-colors hover:bg-bg-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 {item.label}
               </Link>

@@ -16,7 +16,10 @@ export function Container<E extends ElementType = 'div'>({
   const Component = (as ?? 'div') as ElementType;
   return (
     <Component
-      className={cn('mx-auto w-full max-w-(--container-content) px-5 md:px-10', className)}
+      className={cn(
+        'mx-auto w-full max-w-(--container-content) px-5 sm:px-6 md:px-8 lg:px-10',
+        className,
+      )}
       {...rest}
     >
       {children}

@@ -74,20 +74,20 @@ export function Pillars() {
             const Icon = p.icon;
             return (
               <RevealStaggerItem key={p.title}>
-                <article className="group relative rounded-3xl border border-border bg-bg p-8 transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:border-accent/35 hover:shadow-[0_28px_56px_-32px_rgba(43,39,36,0.18)] md:p-10">
-                  <span className="absolute right-8 top-6 font-display text-sm italic text-text-3">
+                <article className="group relative h-full rounded-3xl border border-border bg-bg p-7 transition-[transform,border-color,box-shadow] duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:border-accent/35 hover:shadow-[0_28px_56px_-32px_rgba(43,39,36,0.18)] sm:p-8 md:p-10">
+                  <span className="absolute right-7 top-6 font-display text-sm italic text-text-3 sm:right-8">
                     {p.num}
                   </span>
                   <div className="mb-6 flex size-14 items-center justify-center rounded-[18px] border border-border bg-bg-surface">
                     <Icon size={26} className="text-accent-deep" aria-hidden />
                   </div>
-                  <h3 className="mb-3.5 font-display text-2xl font-normal tracking-[-0.015em] text-text">
+                  <h3 className="mb-3 font-display text-2xl font-normal tracking-[-0.015em] text-text">
                     {p.title}
                   </h3>
-                  <p className="mb-6 text-sm leading-[1.65] text-text-2">{p.body}</p>
+                  <p className="mb-6 text-[14.5px] leading-[1.65] text-text-2">{p.body}</p>
                   <Link
                     href={p.href}
-                    className="inline-flex items-center gap-1.5 text-[13px] font-medium text-text"
+                    className="inline-flex min-h-[36px] items-center gap-1.5 rounded-full text-[13px] font-medium text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                   >
                     En savoir plus{' '}
                     <span

@@ -6,11 +6,11 @@ type Variant = 'accent' | 'dark' | 'ghost' | 'ghostLight';
 type Size = 'md' | 'sm';
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-[-0.005em] font-sans whitespace-nowrap transition-[transform,background-color,border-color,box-shadow] duration-300 ease-[var(--ease-soft)] hover:-translate-y-px disabled:pointer-events-none disabled:opacity-60';
+  'inline-flex items-center justify-center gap-2 rounded-full font-medium tracking-[-0.005em] font-sans whitespace-nowrap cursor-pointer touch-manipulation select-none transition-[transform,background-color,border-color,box-shadow] duration-300 ease-[var(--ease-soft)] hover:-translate-y-px focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg disabled:pointer-events-none disabled:opacity-60';
 
 const sizes: Record<Size, string> = {
-  md: 'px-6 py-3.5 text-sm',
-  sm: 'px-5 py-2.5 text-[13px]',
+  md: 'min-h-[48px] px-6 py-3.5 text-sm',
+  sm: 'min-h-[40px] px-5 py-2.5 text-[13px]',
 };
 
 const variants: Record<Variant, string> = {

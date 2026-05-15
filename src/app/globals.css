@@ -50,6 +50,27 @@
     font-size: 16px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Évite les orphelins typo sur les titres serif */
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Évite que des contenus larges (images, code, tableaux) débordent en mobile */
+  img,
+  picture,
+  svg,
+  video {
+    max-width: 100%;
+    height: auto;
   }
 
   ::selection {
@@ -58,9 +79,14 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
-    border-radius: 4px;
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+
+  /* Ne pas afficher de double focus quand l'élément a déjà focus-visible:ring */
+  *:focus-visible:where([class*='focus-visible:ring']) {
+    outline: none;
   }
 }
 

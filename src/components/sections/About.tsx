@@ -8,7 +8,7 @@ export function About() {
   return (
     <section id="histoire" className="py-20 md:py-[120px]">
       <Container>
-        <div className="grid items-center gap-12 md:gap-18 lg:grid-cols-[1fr_1.05fr]">
+        <div className="grid items-center gap-12 md:gap-16 lg:grid-cols-[1fr_1.05fr] lg:gap-[72px]">
           <Reveal>
             <div className="relative aspect-square overflow-hidden rounded-3xl">
               <Image

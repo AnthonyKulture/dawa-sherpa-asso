@@ -70,25 +70,25 @@ export function Projects() {
             <RevealStaggerItem key={p.title}>
               <Link
                 href={p.href}
-                className="group block overflow-hidden rounded-3xl border border-border bg-bg-surface transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[0_28px_56px_-28px_rgba(43,39,36,0.2)]"
+                className="group block h-full cursor-pointer overflow-hidden rounded-3xl border border-border bg-bg-surface transition-[transform,box-shadow] duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[0_28px_56px_-28px_rgba(43,39,36,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-surface"
               >
                 <div className="relative aspect-[4/5] overflow-hidden">
                   <Image
                     src={p.image}
                     alt={p.alt}
                     fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 ease-[var(--ease-soft)] group-hover:scale-105"
                   />
                   <span className="absolute left-4 top-4 rounded-full bg-white/95 px-3.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.06em] text-text backdrop-blur-sm">
                     {p.category}
                   </span>
                 </div>
-                <div className="px-7 pb-7 pt-6">
+                <div className="px-6 pb-7 pt-6 sm:px-7">
                   <h3 className="mb-2 font-display text-[22px] font-normal tracking-[-0.015em] text-text">
                     {p.title}
                   </h3>
-                  <p className="text-sm leading-[1.6] text-text-2">{p.body}</p>
+                  <p className="text-[14px] leading-[1.6] text-text-2">{p.body}</p>
                 </div>
               </Link>
             </RevealStaggerItem>

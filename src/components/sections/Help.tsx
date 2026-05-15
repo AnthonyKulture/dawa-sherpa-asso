@@ -68,18 +68,14 @@ export function Help() {
             return (
               <RevealStaggerItem key={c.title}>
                 <article
-                  className={`flex h-full min-h-[260px] flex-col justify-between rounded-3xl border p-9 transition-all duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[0_28px_56px_-32px_rgba(43,39,36,0.18)] ${
+                  className={`flex h-full min-h-[260px] flex-col justify-between rounded-3xl border p-7 transition-[transform,border-color,box-shadow] duration-500 ease-[var(--ease-soft)] hover:-translate-y-0.5 hover:shadow-[0_28px_56px_-32px_rgba(43,39,36,0.18)] sm:p-8 md:p-9 ${
                     c.featured
                       ? 'border-bg-dark bg-bg-dark text-text-on-dark'
                       : 'border-border bg-bg-surface text-text hover:border-border-2'
                   }`}
                 >
-                  <div className="mb-8 flex items-start justify-between">
-                    <Icon
-                      size={28}
-                      className={c.featured ? 'text-accent' : 'text-accent'}
-                      aria-hidden
-                    />
+                  <div className="mb-7 flex items-start justify-between md:mb-8">
+                    <Icon size={28} className="text-accent" aria-hidden />
                     <span
                       className={`text-[11px] font-medium uppercase tracking-[0.08em] ${
                         c.featured ? 'text-white/45' : 'text-text-2'
@@ -97,7 +93,7 @@ export function Help() {
                       {c.title}
                     </h3>
                     <p
-                      className={`mb-6 text-sm leading-[1.65] ${
+                      className={`mb-6 text-[14.5px] leading-[1.65] ${
                         c.featured ? 'text-text-on-dark-2' : 'text-text-2'
                       }`}
                     >
@@ -106,10 +102,10 @@ export function Help() {
                   </div>
                   <Link
                     href={c.href}
-                    className={`inline-flex items-center gap-1.5 self-start rounded-full px-5 py-2.5 text-[13px] font-medium transition-all duration-300 ${
+                    className={`inline-flex min-h-[44px] cursor-pointer touch-manipulation items-center gap-1.5 self-start rounded-full px-5 py-2.5 text-[13px] font-medium transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
                       c.featured
-                        ? 'bg-accent text-white hover:bg-accent-deep'
-                        : 'border border-border-2 text-text hover:bg-bg-soft hover:border-text'
+                        ? 'bg-accent text-white hover:bg-accent-deep focus-visible:ring-offset-bg-dark'
+                        : 'border border-border-2 text-text hover:bg-bg-soft hover:border-text focus-visible:ring-offset-bg'
                     }`}
                   >
                     {c.cta}

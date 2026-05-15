@@ -10,28 +10,40 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-bg/85 backdrop-blur-xl backdrop-saturate-150">
       <Container
         as="nav"
-        className="flex items-center justify-between gap-8 py-4.5"
+        className="flex items-center justify-between gap-4 py-3 md:gap-8 md:py-4"
         aria-label="Navigation principale"
       >
-        <Link href="/" aria-label="Accueil" className="flex shrink-0">
-          <Logo className="h-10 w-auto md:h-[42px]" />
+        <Link
+          href="/"
+          aria-label="Accueil"
+          className="flex shrink-0 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+        >
+          <Logo className="h-9 w-auto md:h-[42px]" />
         </Link>
 
-        <ul className="hidden items-center gap-8 text-sm font-medium tracking-[-0.005em] md:flex">
+        <ul className="hidden items-center gap-7 text-sm font-medium tracking-[-0.005em] lg:flex">
           {siteConfig.nav.primary.map((item) => (
             <li key={item.href}>
-              <Link href={item.href} className="text-text transition-colors hover:text-accent-deep">
+              <Link
+                href={item.href}
+                className="rounded-md text-text transition-colors hover:text-accent-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 focus-visible:ring-offset-bg"
+              >
                 {item.label}
               </Link>
             </li>
           ))}
         </ul>
 
-        <div className="flex items-center gap-2.5">
-          <Button href="/bientot" variant="ghost" className="hidden md:inline-flex">
+        <div className="flex items-center gap-2 md:gap-2.5">
+          <Button href="/bientot" variant="ghost" size="sm" className="hidden lg:inline-flex">
             Adhérer
           </Button>
-          <Button href="/bientot" variant="accent" className="group hidden sm:inline-flex">
+          <Button
+            href="/bientot"
+            variant="accent"
+            size="sm"
+            className="group hidden sm:inline-flex"
+          >
             Faire un don <ButtonArrow />
           </Button>
           <MobileNav />
