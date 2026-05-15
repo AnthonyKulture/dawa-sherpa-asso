@@ -1,0 +1,95 @@
+'use client';
+
+import { IconMenu2, IconX } from '@tabler/icons-react';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { Button } from '@/components/ui/Button';
+import { siteConfig } from '@/config/site';
+
+export function MobileNav() {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = '';
+    }
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  }, [open]);
+
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === 'Escape') setOpen(false);
+    }
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
+
+  return (
+    <>
+      <button
+        type="button"
+        className="flex size-10 items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft md:hidden"
+        aria-label="Ouvrir le menu"
+        aria-expanded={open}
+        aria-controls="mobile-drawer"
+        onClick={() => setOpen(true)}
+      >
+        <IconMenu2 size={20} aria-hidden />
+      </button>
+
+      <div
+        id="mobile-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Menu"
+        className={`fixed inset-0 z-[60] md:hidden ${open ? 'pointer-events-auto' : 'pointer-events-none'}`}
+      >
+        <div
+          aria-hidden
+          className={`absolute inset-0 bg-bg-dark/50 backdrop-blur-sm transition-opacity duration-300 ${open ? 'opacity-100' : 'opacity-0'}`}
+          onClick={() => setOpen(false)}
+        />
+        <div
+          className={`absolute inset-y-0 right-0 flex w-[min(360px,90vw)] flex-col bg-bg p-6 shadow-2xl transition-transform duration-300 ease-[var(--ease-soft)] ${open ? 'translate-x-0' : 'translate-x-full'}`}
+        >
+          <div className="flex justify-end">
+            <button
+              type="button"
+              className="flex size-10 items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft"
+              aria-label="Fermer le menu"
+              onClick={() => setOpen(false)}
+            >
+              <IconX size={20} aria-hidden />
+            </button>
+          </div>
+
+          <nav aria-label="Navigation mobile" className="mt-8 flex flex-col gap-2">
+            {siteConfig.nav.primary.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="rounded-xl px-3 py-3 font-display text-2xl font-light text-text transition-colors hover:bg-bg-soft"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="mt-auto flex flex-col gap-2.5 pt-8">
+            <Button href="/bientot" variant="accent" className="justify-center">
+              Faire un don
+            </Button>
+            <Button href="/bientot" variant="ghost" className="justify-center">
+              Devenir adhérent
+            </Button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
