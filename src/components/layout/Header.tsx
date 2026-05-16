@@ -35,17 +35,16 @@ export function Header() {
         </ul>
 
         <div className="flex items-center gap-2 md:gap-2.5">
-          <Button href="/bientot" variant="ghost" size="sm" className="hidden lg:inline-flex">
-            Adhérer
-          </Button>
-          <Button
-            href="/bientot"
-            variant="accent"
-            size="sm"
-            className="group hidden sm:inline-flex"
-          >
-            Faire un don <ButtonArrow />
-          </Button>
+          <div className="hidden lg:block">
+            <Button href="/bientot" variant="ghost" size="sm">
+              Adhérer
+            </Button>
+          </div>
+          <div className="hidden sm:block">
+            <Button href="/bientot" variant="accent" size="sm" className="group">
+              Faire un don <ButtonArrow />
+            </Button>
+          </div>
           <MobileNav />
         </div>
       </Container>
