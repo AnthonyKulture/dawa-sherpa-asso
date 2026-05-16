@@ -43,6 +43,8 @@
 
   html {
     scroll-behavior: smooth;
+    /* Empêche tout débordement horizontal global (drawers off-screen, etc.) sans casser la sticky */
+    overflow-x: clip;
   }
 
   body {
@@ -51,6 +53,7 @@
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: clip;
   }
 
   /* Évite les orphelins typo sur les titres serif */

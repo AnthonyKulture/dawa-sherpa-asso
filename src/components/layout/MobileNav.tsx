@@ -46,7 +46,8 @@ export function MobileNav() {
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
-        className={`fixed inset-0 z-[60] md:hidden ${open ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        className={`fixed inset-0 z-[60] overflow-hidden md:hidden ${open ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        aria-hidden={!open}
       >
         <div
           aria-hidden
