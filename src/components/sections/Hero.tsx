@@ -5,9 +5,9 @@ import { Pill } from '@/components/ui/Pill';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pb-20 pt-6 sm:pb-24 md:pb-32 md:pt-12">
+    <section className="relative flex flex-col justify-center overflow-hidden pb-20 pt-12 sm:pb-24 sm:pt-16 md:pb-28 md:pt-20 lg:min-h-[calc(100svh-80px)] lg:py-16">
       <Container>
-        <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16 lg:min-h-[600px]">
+        <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[0.92fr_1.08fr] lg:gap-16">
           {/* Texte */}
           <div className="lg:pr-2">
             <div className="hero-anim-text delay-1 mb-5 sm:mb-6">
