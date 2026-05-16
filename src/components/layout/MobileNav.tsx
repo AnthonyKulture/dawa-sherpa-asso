@@ -32,7 +32,7 @@ export function MobileNav() {
     <>
       <button
         type="button"
-        className="flex size-11 cursor-pointer touch-manipulation items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg md:hidden"
+        className="flex size-11 cursor-pointer touch-manipulation items-center justify-center rounded-full border border-border-2 text-text transition-colors hover:bg-bg-soft focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg lg:hidden"
         aria-label="Ouvrir le menu"
         aria-expanded={open}
         aria-controls="mobile-drawer"
@@ -46,7 +46,7 @@ export function MobileNav() {
         role="dialog"
         aria-modal="true"
         aria-label="Menu"
-        className={`fixed inset-0 z-[60] overflow-hidden md:hidden ${open ? 'pointer-events-auto' : 'pointer-events-none'}`}
+        className={`fixed inset-0 z-[60] overflow-hidden lg:hidden ${open ? 'pointer-events-auto' : 'pointer-events-none'}`}
         aria-hidden={!open}
       >
         <div
