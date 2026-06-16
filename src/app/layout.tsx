@@ -38,7 +38,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    url: siteConfig.url,
     siteName: 'Parrains et Marraines pour le Népal',
     title: "Parrains et Marraines pour le Népal — Au pied de l'Everest",
     description:
@@ -69,6 +68,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'NGO',
+  '@id': `${siteConfig.url}/#organization`,
   name: siteConfig.name,
   alternateName: siteConfig.shortName,
   url: siteConfig.url,
