@@ -28,7 +28,7 @@ const helpCards: HelpCard[] = [
     tag: '02',
     icon: IconGift,
     title: 'Don ponctuel',
-    body: 'Un coup de pouce immédiat pour les projets en cours. Reçu fiscal envoyé sous 48 heures par email.',
+    body: 'Un coup de pouce immédiat pour les projets en cours, affecté là où le besoin est le plus urgent dans la vallée.',
     cta: 'Faire un don →',
     href: '/bientot',
   },
@@ -58,7 +58,7 @@ export function Help() {
                 notre mission.
               </>
             }
-            lede="Chaque don ouvre droit à une réduction d'impôt de 66%. Un don de 50€ ne vous coûte réellement que 17€ après déduction."
+            lede="Don ponctuel, don régulier ou parrainage : chaque contribution finance directement la scolarité, le foyer pour aînés et le dispensaire de la vallée du Solu."
           />
         </Reveal>
 

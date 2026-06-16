@@ -99,3 +99,13 @@ CSS désactivé dans Biome car Tailwind v4 utilise des directives (`@theme`, `@u
 **Décision** : pas de `next-intl` ni de routing localisé pour l'instant. `<html lang="fr">`, textes en dur ou via Sanity.
 
 **Conséquences** : si EN est demandé plus tard (Phase 5+), on ajoute `next-intl` et on duplique les routes. Pas de dette technique anticipée — la structure App Router le permet sans refactor majeur.
+
+---
+
+## 2026-06-16 · ADR-010 — La page « Appel à projet » est abandonnée
+
+**Décision** : la page `/appel-a-projet` de l'ancien site (et son dossier de candidature PMPN téléchargeable) n'est pas reprise dans la refonte.
+
+**Contexte** : sur l'ancien site, cette page ne détaillait aucun projet concret (juste un dossier à télécharger) ; décision du client le 2026-06-16 de ne pas la conserver.
+
+**Conséquences** : une entrée de moins dans le plan de refonte. Si un appel à projet ponctuel doit réapparaître plus tard, il pourra être porté par le futur blog/actualités (Sanity, ADR-006) plutôt que par une page dédiée permanente.

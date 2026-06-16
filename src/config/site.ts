@@ -8,6 +8,20 @@ export const siteConfig = {
     email: 'dachhiridawasherpa@gmail.com',
     phones: ['+33 4 57 43 79 43', '+33 6 04 52 42 79'],
     whatsapp: 'https://wa.me/33604524279',
+    address: {
+      street: '55, impasse de Tréville',
+      postalCode: '74250',
+      city: 'Ville-en-Sallaz',
+      country: 'France',
+    },
+  },
+  // Informations légales (page Mentions légales / Confidentialité + futur JSON-LD).
+  org: {
+    legalForm: 'Association loi du 1er juillet 1901',
+    rna: 'W051000764',
+    prefecture: 'Bonneville',
+    foundedYear: 2007,
+    publicationDirector: 'Dachhiri-dawa Sherpa',
   },
   socials: {
     facebook: 'https://facebook.com/dawasherpa.dachhiri',
@@ -17,9 +31,10 @@ export const siteConfig = {
   nav: {
     primary: [
       { label: "L'association", href: '/#histoire' },
-      { label: 'Actions', href: '/#actions' },
+      { label: 'Nos actions', href: '/nos-actions' },
       { label: 'Reconstruction', href: '/#reconstruction' },
-      { label: 'Témoignages', href: '/#temoignage' },
+      { label: 'Témoignages', href: '/temoignages' },
+      { label: 'Contact', href: '/contact' },
     ],
     actions: [
       { label: 'Faire un don', href: '/bientot' },

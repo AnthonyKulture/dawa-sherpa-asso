@@ -14,9 +14,10 @@ const columns = [
     title: 'Plan du site',
     links: [
       { label: "L'association", href: '/#histoire' },
-      { label: 'Nos actions', href: '/#actions' },
+      { label: 'Nos actions', href: '/nos-actions' },
       { label: 'Reconstruction', href: '/#reconstruction' },
-      { label: 'Témoignages', href: '/#temoignage' },
+      { label: 'Témoignages', href: '/temoignages' },
+      { label: 'Contact', href: '/contact' },
     ],
   },
   {
@@ -38,8 +39,8 @@ export function Footer() {
           <div>
             <Logo tone="light" className="h-12 w-auto" />
             <p className="mt-5 max-w-xs text-[13px] leading-relaxed text-white/55">
-              Association loi 1901 fondée en 2007 par Dawa Dachhiri Sherpa. Solukumbu, Népal. Reçu
-              fiscal pour tout don supérieur à 10€.
+              Association loi 1901 fondée en 2007 par Dawa Dachhiri Sherpa. Solidarité dans la
+              vallée du Solukumbu, au Népal.
             </p>
             <div className="mt-6 flex gap-2.5">
               {siteConfig.socials.facebook ? (
@@ -128,11 +129,16 @@ export function Footer() {
                   {siteConfig.contact.email}
                 </a>
               </li>
+              <li className="pt-2 not-italic leading-relaxed text-white/55">
+                {siteConfig.contact.address.street}
+                <br />
+                {siteConfig.contact.address.postalCode} {siteConfig.contact.address.city}
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/8 pt-6 text-xs text-white/45">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/8 pt-6 text-xs text-white/55">
           <span>
             © {year} {siteConfig.name} · Tous droits réservés
           </span>
@@ -141,7 +147,7 @@ export function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="transition-colors hover:text-accent"
+                className="text-white/65 transition-colors hover:text-accent"
               >
                 {link.label}
               </Link>

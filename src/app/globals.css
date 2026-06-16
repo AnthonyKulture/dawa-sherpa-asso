@@ -9,7 +9,8 @@
 
   /* Couleurs — texte */
   --color-text: #2b2724;
-  --color-text-2: #736b62;
+  /* #6e665d : ≥4.5:1 (WCAG AA) y compris sur bg-soft (#f2ede4) */
+  --color-text-2: #6e665d;
   --color-text-3: #a89f95;
   --color-text-on-dark: #f5f0e8;
   --color-text-on-dark-2: rgb(245 240 232 / 0.72);
@@ -98,6 +99,58 @@
   font-optical-sizing: auto;
   letter-spacing: -0.015em;
   line-height: 1.08;
+}
+
+/* Mise en forme des pages éditoriales longues (mentions légales, confidentialité) */
+@layer components {
+  .legal-prose {
+    color: var(--color-text-2);
+    font-size: 15.5px;
+    line-height: 1.75;
+  }
+  .legal-prose > * + * {
+    margin-top: 1rem;
+  }
+  .legal-prose h2 {
+    margin-top: 2.75rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: -0.015em;
+    line-height: 1.2;
+    color: var(--color-text);
+  }
+  .legal-prose > h2:first-child {
+    margin-top: 0;
+  }
+  .legal-prose h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text);
+  }
+  .legal-prose ul {
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+  .legal-prose li + li {
+    margin-top: 0.4rem;
+  }
+  .legal-prose a {
+    color: var(--color-accent-deep);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s var(--ease-soft);
+  }
+  .legal-prose a:hover {
+    color: var(--color-accent);
+  }
+  .legal-prose strong {
+    color: var(--color-text);
+    font-weight: 600;
+  }
 }
 
 @keyframes fade-up {

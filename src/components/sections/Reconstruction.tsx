@@ -20,7 +20,7 @@ export function Reconstruction() {
             </Reveal>
             <Reveal delay={0.08}>
               <h2 className="mt-5 mb-6 font-display text-[clamp(36px,4vw,56px)] font-light leading-[1.08] tracking-[-0.02em]">
-                Dix ans plus tard,{' '}
+                Plus de dix ans après,{' '}
                 <em className="font-light not-italic text-accent-deep [font-style:italic]">
                   cinq maisons
                 </em>{' '}
