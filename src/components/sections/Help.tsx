@@ -21,7 +21,7 @@ const helpCards: HelpCard[] = [
     title: 'Don mensuel',
     body: 'Engagement durable, impact prévisible. Vous nous permettez de planifier les projets sur le long terme.',
     cta: 'À partir de 10€ / mois →',
-    href: '/bientot',
+    href: '/faire-un-don',
     featured: true,
   },
   {
@@ -30,7 +30,7 @@ const helpCards: HelpCard[] = [
     title: 'Don ponctuel',
     body: 'Un coup de pouce immédiat pour les projets en cours, affecté là où le besoin est le plus urgent dans la vallée.',
     cta: 'Faire un don →',
-    href: '/bientot',
+    href: '/faire-un-don',
   },
   {
     tag: '03',
@@ -38,7 +38,7 @@ const helpCards: HelpCard[] = [
     title: 'Parrainer un enfant',
     body: "Accompagnez la scolarité d'un enfant du village. Vous recevez régulièrement ses nouvelles, ses dessins, ses bulletins.",
     cta: 'Devenir parrain →',
-    href: '/bientot',
+    href: '/faire-un-don',
   },
 ];
 

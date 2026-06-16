@@ -1,7 +1,7 @@
 type LogoProps = {
   className?: string;
   title?: string;
-  /** Garde pour compat API (Footer/bientot l'utilisent). Le SVG officiel n'a pas de variante. */
+  /** Garde pour compat API (Footer l'utilise). Le SVG officiel n'a pas de variante. */
   tone?: 'dark' | 'light';
 };
 

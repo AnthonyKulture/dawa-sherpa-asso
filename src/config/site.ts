@@ -28,6 +28,13 @@ export const siteConfig = {
     instagram: '',
     whatsapp: 'https://wa.me/33604524279',
   },
+  // Formulaire HelloAsso (don / adhésion). widgetUrl = code d'intégration iframe.
+  helloAsso: {
+    formUrl:
+      'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1',
+    widgetUrl:
+      'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1/widget',
+  },
   nav: {
     primary: [
       { label: "L'association", href: '/#histoire' },
@@ -37,9 +44,9 @@ export const siteConfig = {
       { label: 'Contact', href: '/contact' },
     ],
     actions: [
-      { label: 'Faire un don', href: '/bientot' },
-      { label: 'Parrainer', href: '/bientot' },
-      { label: 'Devenir adhérent', href: '/bientot' },
+      { label: 'Faire un don', href: '/faire-un-don' },
+      { label: 'Parrainer', href: '/faire-un-don' },
+      { label: 'Devenir adhérent', href: '/faire-un-don' },
     ],
     legal: [
       { label: 'Mentions légales', href: '/mentions-legales' },

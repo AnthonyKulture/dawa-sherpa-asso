@@ -23,9 +23,9 @@ const columns = [
   {
     title: 'Agir',
     links: [
-      { label: 'Faire un don', href: '/bientot' },
-      { label: 'Parrainer un enfant', href: '/bientot' },
-      { label: 'Devenir adhérent', href: '/bientot' },
+      { label: 'Faire un don', href: '/faire-un-don' },
+      { label: 'Parrainer un enfant', href: '/faire-un-don' },
+      { label: 'Devenir adhérent', href: '/faire-un-don' },
     ],
   },
 ];

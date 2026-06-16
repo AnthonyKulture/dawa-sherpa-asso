@@ -78,10 +78,10 @@ export function MobileNav() {
         </nav>
 
         <div className="mt-auto flex flex-col gap-2.5 pt-8">
-          <Button href="/bientot" variant="accent" className="justify-center">
+          <Button href="/faire-un-don" variant="accent" className="justify-center">
             Faire un don
           </Button>
-          <Button href="/bientot" variant="ghost" className="justify-center">
+          <Button href="/faire-un-don" variant="ghost" className="justify-center">
             Devenir adhérent
           </Button>
         </div>

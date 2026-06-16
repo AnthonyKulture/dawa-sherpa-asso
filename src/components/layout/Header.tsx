@@ -36,12 +36,12 @@ export function Header() {
 
         <div className="flex items-center gap-2 md:gap-2.5">
           <div className="hidden lg:block">
-            <Button href="/bientot" variant="ghost" size="sm">
+            <Button href="/faire-un-don" variant="ghost" size="sm">
               Adhérer
             </Button>
           </div>
           <div className="hidden sm:block">
-            <Button href="/bientot" variant="accent" size="sm" className="group">
+            <Button href="/faire-un-don" variant="accent" size="sm" className="group">
               Faire un don <ButtonArrow />
             </Button>
           </div>

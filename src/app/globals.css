@@ -139,13 +139,14 @@
     margin-top: 0.4rem;
   }
   .legal-prose a {
-    color: var(--color-accent-deep);
+    color: var(--color-text);
     text-decoration: underline;
+    text-decoration-color: var(--color-accent-deep);
     text-underline-offset: 2px;
-    transition: color 0.2s var(--ease-soft);
+    transition: text-decoration-color 0.2s var(--ease-soft);
   }
   .legal-prose a:hover {
-    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
   }
   .legal-prose strong {
     color: var(--color-text);

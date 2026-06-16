@@ -38,10 +38,10 @@ export function CTAFinal() {
         </Reveal>
         <Reveal delay={0.26}>
           <div className="flex flex-wrap justify-center gap-3">
-            <Button href="/bientot" variant="accent" className="group">
+            <Button href="/faire-un-don" variant="accent" className="group">
               Faire un don maintenant <ButtonArrow />
             </Button>
-            <Button href="/bientot" variant="ghostLight">
+            <Button href="/faire-un-don" variant="ghostLight">
               Devenir adhérent
             </Button>
           </div>

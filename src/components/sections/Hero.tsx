@@ -26,7 +26,7 @@ export function Hero() {
               pour aînés, dispensaire, reconstruction.
             </p>
             <div className="hero-anim-text delay-4 flex flex-wrap gap-3">
-              <Button href="/bientot" variant="accent" className="group">
+              <Button href="/faire-un-don" variant="accent" className="group">
                 Parrainer un enfant <ButtonArrow />
               </Button>
               <Button href="#histoire" variant="ghost">
