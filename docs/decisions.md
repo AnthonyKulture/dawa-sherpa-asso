@@ -109,3 +109,20 @@ CSS désactivé dans Biome car Tailwind v4 utilise des directives (`@theme`, `@u
 **Contexte** : sur l'ancien site, cette page ne détaillait aucun projet concret (juste un dossier à télécharger) ; décision du client le 2026-06-16 de ne pas la conserver.
 
 **Conséquences** : une entrée de moins dans le plan de refonte. Si un appel à projet ponctuel doit réapparaître plus tard, il pourra être porté par le futur blog/actualités (Sanity, ADR-006) plutôt que par une page dédiée permanente.
+
+---
+
+## 2026-06-16 · ADR-011 — Tunnels HelloAsso (don, boutique, adhésion) — révise ADR-005
+
+**Décision** : le paiement passe par **HelloAsso** (gratuit pour les assos, reçus fiscaux automatiques, RGPD géré). Trois tunnels embarqués via iframe (`HelloAssoEmbed`, code d'intégration officiel HelloAsso) :
+- **Don** → `/faire-un-don` (`formulaires/1`)
+- **Boutique solidaire** → `/boutique` (`boutiques/boutique-asso`) — **réintroduite** : ADR-005 avait retiré la boutique, le client la rebranche via HelloAsso le 2026-06-16
+- **Adhésion** → `/adherer` (`adhesions/adhesion`)
+
+**Alternatives écartées** : Stripe Checkout (compte, webhooks, reçus fiscaux à gérer soi-même) ; redirection simple sans iframe (choix client = formulaire embarqué pour rester dans le contexte du site).
+
+**Conséquences** :
+- `/bientot` supprimé (placeholder, cf. ADR-005). Tous les CTAs pointent vers les tunnels réels.
+- Config centralisée dans `siteConfig.helloAsso` (`don` / `boutique` / `adhesion`).
+- Reçu fiscal / réduction 66 % : à réactiver dans le contenu **si** le formulaire HelloAsso affiche la réduction (asso reconnue d'intérêt général) — sinon laissé neutre.
+- Parrainage (600 €/an) : pas de tunnel dédié pour l'instant → via le formulaire de don + renvoi `/contact`.

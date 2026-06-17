@@ -36,7 +36,7 @@ export function Header() {
 
         <div className="flex items-center gap-2 md:gap-2.5">
           <div className="hidden lg:block">
-            <Button href="/faire-un-don" variant="ghost" size="sm">
+            <Button href="/adherer" variant="ghost" size="sm">
               Adhérer
             </Button>
           </div>

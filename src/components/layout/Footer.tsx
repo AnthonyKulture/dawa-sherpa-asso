@@ -17,6 +17,7 @@ const columns = [
       { label: 'Nos actions', href: '/nos-actions' },
       { label: 'Reconstruction', href: '/#reconstruction' },
       { label: 'Témoignages', href: '/temoignages' },
+      { label: 'La boutique', href: '/boutique' },
       { label: 'Contact', href: '/contact' },
     ],
   },
@@ -25,7 +26,8 @@ const columns = [
     links: [
       { label: 'Faire un don', href: '/faire-un-don' },
       { label: 'Parrainer un enfant', href: '/faire-un-don' },
-      { label: 'Devenir adhérent', href: '/faire-un-don' },
+      { label: 'Devenir adhérent', href: '/adherer' },
+      { label: 'La boutique solidaire', href: '/boutique' },
     ],
   },
 ];

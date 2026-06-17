@@ -81,7 +81,7 @@ export function MobileNav() {
           <Button href="/faire-un-don" variant="accent" className="justify-center">
             Faire un don
           </Button>
-          <Button href="/faire-un-don" variant="ghost" className="justify-center">
+          <Button href="/adherer" variant="ghost" className="justify-center">
             Devenir adhérent
           </Button>
         </div>

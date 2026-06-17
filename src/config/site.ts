@@ -28,25 +28,36 @@ export const siteConfig = {
     instagram: '',
     whatsapp: 'https://wa.me/33604524279',
   },
-  // Formulaire HelloAsso (don / adhésion). widgetUrl = code d'intégration iframe.
+  // Tunnels HelloAsso. `widget` = URL suffixée /widget (code d'intégration iframe).
   helloAsso: {
-    formUrl:
-      'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1',
-    widgetUrl:
-      'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1/widget',
+    don: {
+      url: 'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1',
+      widget:
+        'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/formulaires/1/widget',
+    },
+    boutique: {
+      url: 'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/boutiques/boutique-asso',
+      widget:
+        'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/boutiques/boutique-asso/widget',
+    },
+    adhesion: {
+      url: 'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/adhesions/adhesion',
+      widget:
+        'https://www.helloasso.com/associations/parrains-et-marraines-pour-le-nepal/adhesions/adhesion/widget',
+    },
   },
   nav: {
     primary: [
       { label: "L'association", href: '/#histoire' },
       { label: 'Nos actions', href: '/nos-actions' },
-      { label: 'Reconstruction', href: '/#reconstruction' },
       { label: 'Témoignages', href: '/temoignages' },
+      { label: 'Boutique', href: '/boutique' },
       { label: 'Contact', href: '/contact' },
     ],
     actions: [
       { label: 'Faire un don', href: '/faire-un-don' },
       { label: 'Parrainer', href: '/faire-un-don' },
-      { label: 'Devenir adhérent', href: '/faire-un-don' },
+      { label: 'Devenir adhérent', href: '/adherer' },
     ],
     legal: [
       { label: 'Mentions légales', href: '/mentions-legales' },

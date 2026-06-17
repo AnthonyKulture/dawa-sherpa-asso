@@ -35,7 +35,7 @@ export default function FaireUnDonPage() {
           <div className="mx-auto max-w-3xl">
             <Reveal>
               <HelloAssoEmbed
-                src={siteConfig.helloAsso.widgetUrl}
+                src={siteConfig.helloAsso.don.widget}
                 title="Formulaire de don — Parrains et Marraines pour le Népal (HelloAsso)"
               />
             </Reveal>
@@ -44,7 +44,7 @@ export default function FaireUnDonPage() {
               <p className="mt-4 text-center text-[13px] leading-relaxed text-text-2">
                 Le formulaire ne s&apos;affiche pas ?{' '}
                 <a
-                  href={siteConfig.helloAsso.formUrl}
+                  href={siteConfig.helloAsso.don.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
@@ -64,16 +64,20 @@ export default function FaireUnDonPage() {
 
             <Reveal>
               <p className="mt-8 rounded-3xl border border-border bg-bg-soft px-7 py-6 text-center text-[14.5px] leading-relaxed text-text-2 sm:px-8">
-                Vous souhaitez{' '}
-                <strong className="font-medium text-text">parrainer un enfant</strong> (600&nbsp;€
-                par an) ou <strong className="font-medium text-text">adhérer</strong> à
-                l&apos;association ? Le formulaire ci-dessus permet déjà de nous soutenir ; pour un
-                accompagnement personnalisé, vous pouvez aussi{' '}
+                Vous souhaitez plutôt{' '}
+                <Link
+                  href="/adherer"
+                  className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-soft"
+                >
+                  adhérer à l&apos;association
+                </Link>{' '}
+                ? Pour <strong className="font-medium text-text">parrainer un enfant</strong>{' '}
+                (600&nbsp;€ par an), accompagnement personnalisé&nbsp;:{' '}
                 <Link
                   href="/contact"
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-soft"
                 >
-                  nous contacter directement
+                  contactez-nous
                 </Link>
                 .
               </p>

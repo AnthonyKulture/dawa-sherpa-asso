@@ -42,10 +42,10 @@ Sert de **source de vérité éditoriale** pour la refonte. Les textes sont repr
 | NOS ACTIONS | `/les-actions` | ✅ → `/nos-actions` (Phase 2) |
 | ACTUALITÉS | `/blog` | à créer (Sanity, ADR-006) |
 | TÉMOIGNAGES | `/temoignages` | ✅ (Phase 3 — extraits verbatim) |
-| LA BOUTIQUE | `/boutique` | ❌ retirée (ADR-005) |
+| LA BOUTIQUE | `/boutique` | ✅ réintroduite — HelloAsso (ADR-011) |
 | APPEL À PROJET | `/appel-a-projet` | ❌ retirée (décision client 2026-06-16) |
 | CONTACTS | `/a-propos` | ✅ → `/contact` (Phase 1) |
-| FAIRE UN DON | `/faire-un-don` | placeholder `/bientot` (ADR-005) |
+| FAIRE UN DON | `/faire-un-don` | ✅ HelloAsso embarqué (ADR-011) ; `/bientot` supprimé |
 
 Autres éléments : inscription **newsletter** (« Restons en contact »). Le **dossier de candidature PMPN** était rattaché à « Appel à projet », page abandonnée → non repris.
 

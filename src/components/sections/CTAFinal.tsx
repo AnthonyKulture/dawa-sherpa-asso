@@ -41,7 +41,7 @@ export function CTAFinal() {
             <Button href="/faire-un-don" variant="accent" className="group">
               Faire un don maintenant <ButtonArrow />
             </Button>
-            <Button href="/faire-un-don" variant="ghostLight">
+            <Button href="/adherer" variant="ghostLight">
               Devenir adhérent
             </Button>
           </div>
