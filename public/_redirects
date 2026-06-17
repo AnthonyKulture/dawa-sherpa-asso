@@ -1,0 +1,23 @@
+# Redirections 301 — anciennes URLs de dawasherpa-asso.org -> nouvelles
+# Format Cloudflare Pages : <source> <destination> <code>
+# (servi depuis la racine du build statique : public/_redirects -> out/_redirects)
+
+# Pages renommées
+/les-actions            /nos-actions/   301
+/les-actions/*          /nos-actions/   301
+/a-propos               /contact/       301
+/a-propos/*             /contact/       301
+
+# Page abandonnée (ADR-010) -> renvoi vers les actions
+/appel-a-projet         /nos-actions/   301
+/appel-a-projet/*       /nos-actions/   301
+
+# Anciens témoignages individuels -> page témoignages consolidée
+/quelqu-un-est-soudainement-entre-dans-ma-vie   /temoignages/   301
+/l-ecole-a-tout-prix-pour-les-filles            /temoignages/   301
+/un-reve-devenir-medecin                        /temoignages/   301
+/sur-les-chemins-de-l-hopital                   /temoignages/   301
+
+# Blog/actualités pas encore reconstruit (Sanity, ADR-006) -> accueil en attendant
+/blog                   /   301
+/blog/*                 /   301
