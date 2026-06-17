@@ -42,7 +42,7 @@ export default function FaireUnDonPage() {
 
             <Reveal>
               <p className="mt-4 text-center text-[13px] leading-relaxed text-text-2">
-                Le formulaire ne s&apos;affiche pas ?{' '}
+                Le formulaire ne s&apos;affiche pas&nbsp;?{' '}
                 <a
                   href={siteConfig.helloAsso.don.url}
                   target="_blank"
@@ -50,7 +50,8 @@ export default function FaireUnDonPage() {
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                 >
                   Ouvrir le formulaire sur HelloAsso
-                  <span className="sr-only"> (nouvel onglet)</span> →
+                  <span className="sr-only"> (nouvel onglet)</span>
+                  <span aria-hidden="true"> →</span>
                 </a>
               </p>
             </Reveal>
@@ -70,8 +71,8 @@ export default function FaireUnDonPage() {
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg-soft"
                 >
                   adhérer à l&apos;association
-                </Link>{' '}
-                ? Pour <strong className="font-medium text-text">parrainer un enfant</strong>{' '}
+                </Link>
+                &nbsp;? Pour <strong className="font-medium text-text">parrainer un enfant</strong>{' '}
                 (600&nbsp;€ par an), accompagnement personnalisé&nbsp;:{' '}
                 <Link
                   href="/contact"

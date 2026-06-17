@@ -42,7 +42,7 @@ export default function AdhererPage() {
 
             <Reveal>
               <p className="mt-4 text-center text-[13px] leading-relaxed text-text-2">
-                Le formulaire ne s&apos;affiche pas ?{' '}
+                Le formulaire ne s&apos;affiche pas&nbsp;?{' '}
                 <a
                   href={siteConfig.helloAsso.adhesion.url}
                   target="_blank"
@@ -50,7 +50,8 @@ export default function AdhererPage() {
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                 >
                   Adhérer sur HelloAsso
-                  <span className="sr-only"> (nouvel onglet)</span> →
+                  <span className="sr-only"> (nouvel onglet)</span>
+                  <span aria-hidden="true"> →</span>
                 </a>
               </p>
             </Reveal>
@@ -63,8 +64,8 @@ export default function AdhererPage() {
                   className="rounded-sm font-medium text-text underline decoration-accent-deep underline-offset-2 transition-colors hover:decoration-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
                 >
                   faire un don
-                </Link>{' '}
-                ?
+                </Link>
+                &nbsp;?
               </p>
             </Reveal>
           </div>
