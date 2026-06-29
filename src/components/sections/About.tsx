@@ -26,7 +26,7 @@ export function About() {
             </Reveal>
             <Reveal delay={0.1}>
               <h2 className="mt-5 mb-7 max-w-[560px] font-display text-[clamp(36px,4vw,58px)] font-light leading-[1.08] tracking-[-0.02em]">
-                Du sommet de l&apos;Everest{' '}
+                Des sentiers de l&apos;Himalaya{' '}
                 <em className="font-light not-italic text-accent-deep [font-style:italic]">
                   aux salles de classe
                 </em>{' '}
@@ -51,9 +51,9 @@ export function About() {
               </Reveal>
               <Reveal delay={0.3}>
                 <p>
-                  Forts de cette expérience, notre association a à cœur de sensibiliser et mobiliser
-                  tous ceux que nous côtoyons aux défis auxquels le Népal est confronté, en
-                  particulier depuis le séisme dévastateur d&apos;avril 2015.
+                  Forts de cette expérience, nous avons à cœur de sensibiliser et de mobiliser tous
+                  ceux que nous côtoyons aux défis que traverse le Népal, et de pérenniser nos
+                  actions sur le terrain&nbsp;: scolarité, accueil des aînés et accès aux soins.
                 </p>
               </Reveal>
             </div>

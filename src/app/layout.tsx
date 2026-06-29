@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: '%s · Parrains et Marraines pour le Népal',
   },
   description:
-    "Fondée en 2007 par Dawa Dachhiri Sherpa, l'association soutient les villages de Taksindu et Chhulemu dans la vallée du Solukumbu : scolarité, grand âge, santé, reconstruction.",
+    "Fondée en 2007 par Dawa Dachhiri Sherpa, l'association soutient les villages de Taksindu et Chhulemu dans la vallée du Solukumbu : scolarité, grand âge, santé, rénovation des centres.",
   applicationName: 'Parrains et Marraines pour le Népal',
   authors: [{ name: 'Parrains et Marraines pour le Népal' }],
   alternates: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     siteName: 'Parrains et Marraines pour le Népal',
     title: "Parrains et Marraines pour le Népal — Au pied de l'Everest",
     description:
-      'Solidarité au Népal depuis 2007. Soutenez la scolarité, le grand âge, la santé et la reconstruction dans la vallée du Solukumbu.',
+      'Solidarité au Népal depuis 2007. Soutenez la scolarité, le grand âge, la santé et la rénovation des centres dans la vallée du Solukumbu.',
     images: [
       {
         url: '/og-image.jpg',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Parrains et Marraines pour le Népal — Au pied de l'Everest",
     description:
-      'Solidarité au Népal depuis 2007. Soutenez la scolarité, le grand âge, la santé et la reconstruction dans la vallée du Solukumbu.',
+      'Solidarité au Népal depuis 2007. Soutenez la scolarité, le grand âge, la santé et la rénovation des centres dans la vallée du Solukumbu.',
     images: ['/og-image.jpg'],
   },
   robots: {

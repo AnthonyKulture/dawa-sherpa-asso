@@ -27,7 +27,7 @@ export default function BoutiquePage() {
             au Népal.
           </>
         }
-        lede="Faites un geste utile et repartez avec un objet qui a du sens : l'intégralité des bénéfices de la boutique finance la scolarité, le foyer pour aînés, le dispensaire et la reconstruction."
+        lede="Faites un geste utile et repartez avec un objet qui a du sens : l'intégralité des bénéfices de la boutique finance la scolarité, le foyer pour aînés, le dispensaire et la rénovation des centres."
       />
 
       <section className="py-16 md:py-24">

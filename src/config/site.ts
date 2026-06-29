@@ -3,7 +3,7 @@ export const siteConfig = {
   shortName: 'PMPN',
   url: 'https://www.dawasherpa-asso.org',
   description:
-    "Solidarité au Népal depuis 2007. L'association soutient les villages de Taksindu et Chhulemu : scolarité, grand âge, santé, reconstruction.",
+    "Solidarité au Népal depuis 2007. L'association soutient les villages de Taksindu et Chhulemu : scolarité, grand âge, santé, rénovation des centres.",
   contact: {
     email: 'dachhiridawasherpa@gmail.com',
     phones: ['+33 4 57 43 79 43', '+33 6 04 52 42 79'],

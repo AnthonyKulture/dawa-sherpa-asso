@@ -2,8 +2,8 @@ import { Container } from '@/components/ui/Container';
 import { Reveal, RevealStagger, RevealStaggerItem } from '@/components/ui/Reveal';
 
 const stats = [
-  { num: '17', punct: '.', label: "années d'engagement sur le terrain, depuis 2007" },
-  { num: '33', punct: '.', label: 'maisons reconstruites ou réparées après le séisme' },
+  { num: '19', punct: '.', label: "années d'engagement sur le terrain, depuis 2007" },
+  { num: '75', punct: '.', label: 'enfants accueillis au pensionnat depuis 2017' },
   { num: '2700', unit: 'm', label: 'altitude des villages accompagnés dans le Solu' },
   { num: '280', unit: 'km', label: 'de Kathmandu, accessibles à pied par les sentiers' },
 ];

@@ -18,12 +18,12 @@ export function Hero() {
               <em className="font-light not-italic text-accent-deep [font-style:italic]">
                 une promesse
               </em>{' '}
-              tenue depuis 17&nbsp;ans.
+              tenue depuis 19&nbsp;ans.
             </h1>
             <p className="hero-anim-text delay-3 mb-7 max-w-prose text-[16px] leading-[1.65] text-text-2 sm:mb-8 sm:text-[17px] lg:max-w-[480px]">
               Fondée par Dawa Dachhiri Sherpa, coureur d&apos;ultra-trail népalais,
               l&apos;association soutient les villages de Taksindu et Chhulemu — scolarité, foyer
-              pour aînés, dispensaire, reconstruction.
+              pour aînés, dispensaire, rénovation des centres.
             </p>
             <div className="hero-anim-text delay-4 flex flex-wrap gap-3">
               <Button href="/faire-un-don" variant="accent" className="group">

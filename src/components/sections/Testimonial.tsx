@@ -35,8 +35,7 @@ export function Testimonial() {
               <p className="mb-9 max-w-[660px] font-display text-[clamp(24px,2.8vw,36px)] font-light leading-[1.35] tracking-[-0.015em] text-text">
                 Au nom des villageois, ma plus{' '}
                 <em className="font-light italic text-accent-deep">profonde gratitude</em>. Sans
-                vous, les nouvelles maisons ne se dresseraient pas fièrement aujourd&apos;hui dans
-                la vallée.
+                vous, rien de ce que nous accomplissons dans la vallée ne serait possible.
               </p>
             </Reveal>
             <Reveal delay={0.26}>
@@ -50,7 +49,7 @@ export function Testimonial() {
                 <div>
                   <div className="text-sm font-medium text-text">Dawa Dachhiri Sherpa</div>
                   <div className="mt-0.5 text-xs text-text-2">
-                    Fondateur · Retour du chantier, 2023
+                    Fondateur · Dans la vallée du Solu
                   </div>
                 </div>
               </div>

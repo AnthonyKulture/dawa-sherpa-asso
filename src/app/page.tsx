@@ -5,7 +5,7 @@ import { Hero } from '@/components/sections/Hero';
 import { Pillars } from '@/components/sections/Pillars';
 import { Projects } from '@/components/sections/Projects';
 import { QuoteBand } from '@/components/sections/QuoteBand';
-import { Reconstruction } from '@/components/sections/Reconstruction';
+import { Renovation } from '@/components/sections/Renovation';
 import { Stats } from '@/components/sections/Stats';
 import { Testimonial } from '@/components/sections/Testimonial';
 
@@ -16,7 +16,7 @@ export default function Home() {
       <Stats />
       <About />
       <Pillars />
-      <Reconstruction />
+      <Renovation />
       <QuoteBand />
       <Help />
       <Projects />

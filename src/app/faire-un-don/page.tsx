@@ -9,7 +9,7 @@ import { siteConfig } from '@/config/site';
 export const metadata: Metadata = {
   title: 'Faire un don',
   description:
-    "Soutenez l'association Parrains et Marraines pour le Népal : don ponctuel ou régulier, paiement sécurisé via HelloAsso. Scolarité, grand âge, santé, reconstruction.",
+    "Soutenez l'association Parrains et Marraines pour le Népal : don ponctuel ou régulier, paiement sécurisé via HelloAsso. Scolarité, grand âge, santé, rénovation des centres.",
   alternates: { canonical: '/faire-un-don' },
 };
 
@@ -27,7 +27,7 @@ export default function FaireUnDonPage() {
             dans la vallée.
           </>
         }
-        lede="Chaque contribution finance directement la scolarité des enfants, le foyer pour aînés, le dispensaire et la reconstruction à Taksindu et Chhulemu. Don ponctuel ou régulier, en quelques secondes."
+        lede="Chaque contribution finance directement la scolarité des enfants, le foyer pour aînés, le dispensaire et la rénovation des centres à Taksindu et Chhulemu. Don ponctuel ou régulier, en quelques secondes."
       />
 
       <section className="py-16 md:py-24">

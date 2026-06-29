@@ -15,7 +15,7 @@ const columns = [
     links: [
       { label: "L'association", href: '/#histoire' },
       { label: 'Nos actions', href: '/nos-actions' },
-      { label: 'Reconstruction', href: '/#reconstruction' },
+      { label: 'Rénovation des centres', href: '/#renovation' },
       { label: 'Témoignages', href: '/temoignages' },
       { label: 'La boutique', href: '/boutique' },
       { label: 'Contact', href: '/contact' },
